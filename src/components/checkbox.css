@@ -1,0 +1,8 @@
+
+.input__check + div{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.input__check:checked + div{
+    opacity: 1;
+}
