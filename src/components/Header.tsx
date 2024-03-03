@@ -8,7 +8,7 @@ function Header({mode,setMode}:{mode:modeType,setMode:(mode:modeType) => void}) 
     document.body.classList.toggle('dark')  
   }, [mode])
   
-  const typeIcon = mode === 'dark' ? 'sun' : 'moon'
+  const typeIcon = mode === 'light' ? 'sun' : 'moon'
 
   return (
     <header className="flex items-center justify-between">
