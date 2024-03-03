@@ -5,3 +5,5 @@ export const filterTodo = (todo:TodoType[], action:actionsType) => {
     if (action === 'active') return todo.filter(item => !item.completed )
     return todo.filter(item => item.completed )
 } 
+
+export const actionsButton:actionsType[] = ["all", "active", "completed"];

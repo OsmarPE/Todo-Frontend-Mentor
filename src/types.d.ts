@@ -24,3 +24,8 @@ export type TodoAction =
   | { type: "SET_ACTION"; payload: actionsType }
   | { type: "CHANGE_MODE"; payload: modeType }
   | { type: "SET_TEXT"; payload: string }
+
+export interface actionsTypeProps{
+  action:actionsType,
+  setAction:(action: actionsType) => void
+}

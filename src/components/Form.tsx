@@ -37,7 +37,7 @@ function Form({ setTask }: Props) {
     >
       <Checkbox completed={completed} setCompleted={changeCompleted} />
       <input
-        className=" flex-1 h-14 bg-transparent border-0 outline-none text-lightBlue200 dark:text-darkGray100 placeholder:text-sm"
+        className=" flex-1 h-14 caret-bluePrimary bg-transparent border-0 outline-none text-lightBlue200 dark:text-darkGray100 placeholder:text-sm"
         type="text"
         value={text}
         placeholder="Create a new todo..."

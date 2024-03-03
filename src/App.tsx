@@ -22,13 +22,13 @@ function App() {
   return (
       <Container>
         <Header mode={mode} setMode={changeMode}/>
-        <main className="grid gap-4 mt-6 md:mt-10">
+        <main className="grid gap-4 md:gap-8 mt-6 md:mt-10">
           <Form setTask={setTask} />
           <TodoList>
             {
               todoFilter.map(item => <TodoItem removeTask={removeTask} changeCompleteTask={changeCompleteTask} key={item.id} todo={item}/>)
             }
-        {todoLength > 0 && <TodoListActions length={todoIncompletes} clearTodo={clearTodo}/> }
+        {todoLength > 0 && <TodoListActions length={todoIncompletes} clearTodo={clearTodo} action={action} setAction={changeAction}/> }
           </TodoList>
           {todoLength > 0 && <TodoActions action={action} setAction={changeAction} />}
         </main>

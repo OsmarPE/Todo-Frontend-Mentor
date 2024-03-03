@@ -1,5 +1,6 @@
+import './TodoListItems.css'
 function TodoListItems({ children }: { children: React.ReactNode }) {
-  return <div className="overflow-hidden rounded-md">{children}</div>;
+  return <div className="shadow-primary overflow-hidden rounded-md">{children}</div>;
 }
 
 export default TodoListItems;

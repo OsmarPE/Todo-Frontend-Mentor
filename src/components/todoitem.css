@@ -1,7 +1,7 @@
-.todo__text + button{
+.todo__body button{
     opacity: 0;
     transition: opacity 0.4s ease;
 }
-.todo__text:hover + button{
+.todo__body:hover button{
     opacity: 1;
 }

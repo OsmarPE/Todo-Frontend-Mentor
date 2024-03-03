@@ -25,6 +25,9 @@ export default {
         lightBlue300: 'hsl(235, 19%, 35%)',
       }
     },
+    boxShadow:{
+      primary:'0 10px 50px hsla(0, 0%, 0%, 0.071)'
+    }
   },
   plugins: [],
 }
